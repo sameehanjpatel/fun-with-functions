@@ -1,0 +1,22 @@
+{
+  "name": "0-fun-with-functions",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sameehanjpatel/fun-with-functions.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sameehanjpatel/fun-with-functions/issues"
+  },
+  "homepage": "https://github.com/sameehanjpatel/fun-with-functions#readme",
+  "devDependencies": {
+    "prettier": "^1.18.2"
+  }
+}
