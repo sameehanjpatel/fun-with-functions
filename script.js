@@ -96,5 +96,5 @@ const engagement = (views, clicks) => {
 };
 
 const generateRandom = (start, end) => {
-  return Math.floor(Math.random() * (end - start)) + start;
+  return Math.floor(Math.random() * (end - start + 1)) + start;
 };
