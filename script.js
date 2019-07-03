@@ -69,10 +69,32 @@ const howManyAdvanced = (str, letter, caseInsensitive) => {
     str = str.toLowerCase();
     letter = letter.toLowerCase();
   }
-  return str.split("").reduce((accum, current) => {
-    if (current === letter) {
-      accum++;
-    }
-    return accum;
-  }, 0);
+
+  // After case checking, just pass arguments to
+  // howMany() function we already wrote...
+  return howMany(str, letter);
+};
+
+const computeTotal = (sales, tax) => {
+  return sales * (1 + tax);
+};
+
+const computeTotalAdvanced = (sales, tax, shipping = 0) => {
+  return (sales + shipping) * (1 + tax);
+};
+
+const engagement = (views, clicks) => {
+  const percentage = (clicks / views) * 100;
+
+  if (percentage >= 20) {
+    return "GREAT";
+  } else if (percentage < 20 && percentage >= 10) {
+    return "GOOD";
+  } else {
+    return "BAD";
+  }
+};
+
+const generateRandom = (start, end) => {
+  return Math.floor(Math.random() * end) + start;
 };
