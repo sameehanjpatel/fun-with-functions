@@ -1,14 +1,10 @@
 const distinct = str => {
-  return Object.keys(
-    str.split("").reduce((accum, current) => {
-      if (accum[current]) {
-        accum[current] = 0;
-      } else {
-        accum[current]++;
-      }
-      return accum;
-    }, {})
-  ).length;
+  return str.split("").reduce((accum, current) => {
+    if (!accum.includes(current)) {
+      accum.push(current);
+    }
+    return accum;
+  }, []).length;
 };
 
 const zipUp = (arr1, arr2) => {
